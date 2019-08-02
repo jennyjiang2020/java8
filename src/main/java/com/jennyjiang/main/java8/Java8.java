@@ -1,8 +1,8 @@
-package com.jennyjiang;
+package com.jennyjiang.main.java8;
 
-public class Java8Tester {
+public class Java8 {
     public static void main(String args[]) {
-        Java8Tester tester = new Java8Tester();
+        Java8 tester = new Java8();
 
         //with type declaration
         MathOperation addition = (int a, int b) -> a + b;
@@ -33,8 +33,9 @@ public class Java8Tester {
         GreetingService greetService2 = (message) ->
                 System.out.println("Hello " + message);
 
-        greetService1.sayMessage("Jenny");
+        greetService1.sayMessage("Jenny2");
         greetService2.sayMessage("Emma");
+        System.out.println("hello Ethan");
     }
 
     interface MathOperation {
