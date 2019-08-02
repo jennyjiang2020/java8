@@ -16,10 +16,14 @@ public class Java8Tester {
         //without return statement and without curly braces
         MathOperation division = (int a, int b) -> a / b;
 
+        //remainder of division
+        MathOperation remainder = (int a, int b) -> a % b;
+
         System.out.println("10 + 5 = " + tester.operate(10, 5, addition));
         System.out.println("10 - 5 = " + tester.operate(10, 5, subtraction));
         System.out.println("10 x 5 = " + tester.operate(10, 5, multiplication));
         System.out.println("10 / 5 = " + tester.operate(10, 5, division));
+        System.out.println("10 % 5 = " + tester.operate(10, 5, remainder));
 
         //without parenthesis
         GreetingService greetService1 = message ->
